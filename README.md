@@ -1,6 +1,12 @@
 # ddd-validation
 
-DDD Library for validate your entities according Vaughn Vernon using C# / ASP.NET
+DDD Library for validate your entities according Vaughn Vernon using C# / ASP.NET.
+
+## Install via nuget package
+
+```bash
+Install-Package DDDValidation
+```
 
 ## Setup your class
 

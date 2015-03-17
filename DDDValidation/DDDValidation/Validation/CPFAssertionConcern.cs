@@ -7,6 +7,9 @@ namespace DDDValidation.Validation
     {
         public static bool Validate(string cpf)
         {
+            if (string.IsNullOrEmpty(cpf))
+                return false;
+
             Regex reg = new Regex(@"[^0-9]");
             cpf = reg.Replace(cpf, string.Empty);
 
@@ -59,7 +62,7 @@ namespace DDDValidation.Validation
             return true;
         }
 
-        public static void Validate(string cpf, string message)
+        public static void AssertCPFFormat(string cpf, string message)
         {
             if (!Validate(cpf))
                 throw new InvalidOperationException(message);

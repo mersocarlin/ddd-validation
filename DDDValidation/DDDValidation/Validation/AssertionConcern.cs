@@ -101,6 +101,13 @@ namespace DDDValidation.Validation
                 throw new InvalidOperationException(message);
         }
 
+        public static void AssertArgumentDateTime(string dateTimeValue, string message)
+        {
+            DateTime dateTime = DateTime.Now;
+            if (!DateTime.TryParse(dateTimeValue, out dateTime))
+                throw new InvalidOperationException(message);
+        }
+
         protected AssertionConcern()
         {
         }
@@ -178,6 +185,11 @@ namespace DDDValidation.Validation
         protected void SelfAssertStateTrue(bool boolValue, string message)
         {
             AssertionConcern.AssertStateTrue(boolValue, message);
+        }
+
+        protected void SelfAssertArgumentDateTime(string dateTimeValue, string message)
+        {
+            AssertionConcern.AssertArgumentDateTime(dateTimeValue, message);
         }
     }
 }

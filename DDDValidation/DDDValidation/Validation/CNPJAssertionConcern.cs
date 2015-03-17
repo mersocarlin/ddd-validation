@@ -9,6 +9,8 @@ namespace DDDValidation.Validation
     {
         public static bool Validate(string cnpj)
         {
+            if (string.IsNullOrEmpty(cnpj))
+                return false;
             int[] multiplier1 = new int[12] { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
             int[] multiplier = new int[13] { 6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
             int sum;
@@ -42,7 +44,7 @@ namespace DDDValidation.Validation
             return cnpj.EndsWith(digit);
         }
 
-        public static void Validate(string cnpj, string message)
+        public static void AssertCNPJFormat(string cnpj, string message)
         {
             if (!Validate(cnpj))
                 throw new InvalidOperationException(message);

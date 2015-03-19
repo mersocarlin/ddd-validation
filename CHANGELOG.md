@@ -18,9 +18,9 @@ public static void AssertArgumentDateTime(string dateTimeValue, string message)
 
 ### Breaking changes
 
-* CPFAssertionConcern.Validate(cpf, message) changed to CPFAssertionConcern.AssertCPFFormat(cpf, message)
-* CNPJAssertionConcern.Validate(cnpj, message) changed to CNPJAssertionConcern.AssertCNPJFormat(cnpj, message)
-* EmailAssertionConcern.AssertIsValid(email, message) changed to EmailAssertionConcern.AssertEmailFormat(email, message)
+* `CPFAssertionConcern.Validate(cpf, message)` changed to `CPFAssertionConcern.AssertCPFFormat(cpf, message)`
+* `CNPJAssertionConcern.Validate(cnpj, message)` changed to `CNPJAssertionConcern.AssertCNPJFormat(cnpj, message)`
+* `EmailAssertionConcern.AssertIsValid(email, message)` changed to `EmailAssertionConcern.AssertEmailFormat(email, message)`
 
 # 1.0.0.0 (2015-03-07)
 

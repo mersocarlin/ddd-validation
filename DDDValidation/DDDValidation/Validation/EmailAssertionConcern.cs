@@ -7,6 +7,9 @@ namespace DDDValidation.Validation
     {
         public static void AssertEmailFormat(string email, string message)
         {
+            if (string.IsNullOrEmpty(email))
+                throw new Exception(message);
+
             if (!Regex.IsMatch(email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase))
                 throw new Exception(message);
         }

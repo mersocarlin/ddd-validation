@@ -1,4 +1,10 @@
 
+# 1.0.0.2 (2015-03-30)
+
+### Feature
+
+* EmailAssertionConcern validating null values
+
 # 1.0.0.1 (2015-03-16)
 
 ### Features

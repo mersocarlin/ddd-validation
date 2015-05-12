@@ -1,3 +1,8 @@
+# 1.0.0.3 (2015-05-11)
+
+### Feature
+
+* Unit Tests for all validations
 
 # 1.0.0.2 (2015-03-30)
 

@@ -32,7 +32,7 @@ namespace ExampleOfUse
 	        AssertionConcern.AssertArgumentEquals(this.EqualsProperty, "ddd-validation", "The property value for EqualsProperty must be equals to 'ddd-validation'");
 	        AssertionConcern.AssertArgumentLength(this.LengthProperty, 30, "The property value for LengthProperty has a maxlength of 30");
 	        AssertionConcern.AssertArgumentNotNull(this.NullProperty, "The value for NullProperty must be a not null value");
-	        EmailAssertionConcern.AssertIsValid(this.EmailProperty, "The property value for EmailProperty must be a valid email address");
+	        EmailAssertionConcern.AssertEmailFormat(this.EmailProperty, "The property value for EmailProperty must be a valid email address");
 	    }
 	}
 }	

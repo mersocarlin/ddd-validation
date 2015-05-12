@@ -7,7 +7,7 @@ namespace DDDValidation.Validation
     /// </summary>
     public class CNPJAssertionConcern
     {
-        public static bool Validate(string cnpj)
+        private static bool Validate(string cnpj)
         {
             if (string.IsNullOrEmpty(cnpj))
                 return false;

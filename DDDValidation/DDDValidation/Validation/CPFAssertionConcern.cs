@@ -5,7 +5,7 @@ namespace DDDValidation.Validation
 {
     public class CPFAssertionConcern
     {
-        public static bool Validate(string cpf)
+        private static bool Validate(string cpf)
         {
             if (string.IsNullOrEmpty(cpf))
                 return false;

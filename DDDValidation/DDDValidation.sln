@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDValidation", "DDDValidation\DDDValidation.csproj", "{F964D456-BA2C-44CA-8618-849AAAA5D408}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDValidation.Tests", "DDDValidation.Tests\DDDValidation.Tests.csproj", "{6A696E9D-3AA3-4DE3-B11C-155E6AD09FC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F964D456-BA2C-44CA-8618-849AAAA5D408}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F964D456-BA2C-44CA-8618-849AAAA5D408}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F964D456-BA2C-44CA-8618-849AAAA5D408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A696E9D-3AA3-4DE3-B11C-155E6AD09FC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A696E9D-3AA3-4DE3-B11C-155E6AD09FC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A696E9D-3AA3-4DE3-B11C-155E6AD09FC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A696E9D-3AA3-4DE3-B11C-155E6AD09FC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

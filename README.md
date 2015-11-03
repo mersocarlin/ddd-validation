@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/mersocarlin/ddd-validation.svg?branch=develop)](https://travis-ci.org/mersocarlin/ddd-validation)
+[![Build Status](https://travis-ci.org/mersocarlin/ddd-validation.svg?branch=master)](https://travis-ci.org/mersocarlin/ddd-validation)
 
 # ddd-validation
 
